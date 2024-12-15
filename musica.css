@@ -17,6 +17,7 @@ body {
     width: calc(40%);
     margin-left: 5vw;
     margin-bottom: 5vh;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Add shadow */
 }
 
 .container img:hover { /* Corregido: sin espacio entre img y :hover */
