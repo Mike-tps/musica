@@ -1,0 +1,48 @@
+body {
+    background-color: #ffc0cb; /* Color de fondo rosa */
+    background-image: url(media/img/z.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.container {
+    display: flex; /* Usar flex para el contenedor */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 5vw;
+}
+
+.container img {
+    width: calc(40%);
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.container img:hover { /* Corregido: sin espacio entre img y :hover */
+    transform: scale(1.1);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.estrella {
+    position: absolute;
+    width: 30px; /* Ajusta el tamaño de la estrella */
+    height: 30px; /* Ajusta el tamaño de la estrella */
+    opacity: 0;
+    animation: caer 4s forwards;
+    pointer-events: none;
+}
+
+@keyframes caer {
+    0% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateY(20vh) rotate(360deg) scale(0);
+        opacity: 0; 
+    }
+}
